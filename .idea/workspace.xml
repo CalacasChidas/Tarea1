@@ -4,11 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1c86d66-c292-44f0-bc1c-b2163986f8cd" name="Changes" comment="Inicio del proyecto" />
+    <list default="true" id="e1c86d66-c292-44f0-bc1c-b2163986f8cd" name="Changes" comment="Inicio del proyecto">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea1/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tarea1/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tarea1/hello-view.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,27 +37,37 @@
     </option>
   </component>
   <component name="ProjectId" id="2MWKrBIimCxVHWqjmY27Y1GTAz3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/aleja/Downloads/javafx-sdk-19.0.2.1/lib",
+    "last_opened_file_path": "C:/Users/aleja/iCloudDrive/TEC/Progra/Estructura de Datos I/Tarea1/src/main/java/com/example/tarea1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\aleja\iCloudDrive\TEC\Progra\Estructura de Datos I\Tarea1\src\main\java\com\example\tarea1" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.example.tarea1.HelloApplication" />
@@ -63,7 +86,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677878094644</updated>
-      <workItem from="1677878095738" duration="383000" />
+      <workItem from="1677878095738" duration="2400000" />
+      <workItem from="1677907122298" duration="632000" />
+      <workItem from="1677907830337" duration="156000" />
+      <workItem from="1677907999833" duration="213000" />
+      <workItem from="1677908271184" duration="59000" />
+      <workItem from="1677908934077" duration="3712000" />
+      <workItem from="1677955579207" duration="4215000" />
+      <workItem from="1677981187875" duration="1393000" />
+      <workItem from="1678032387151" duration="6423000" />
     </task>
     <task id="LOCAL-00001" summary="Inicio del proyecto">
       <created>1677878411600</created>
@@ -79,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677878447056</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Inicio del proyecto">
+      <created>1677878637458</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677878637458</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

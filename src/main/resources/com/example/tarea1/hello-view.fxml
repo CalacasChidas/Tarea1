@@ -1,16 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.tarea1.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: azure;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tarea1.HelloController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SEASHELL" height="28.0" layoutX="129.0" layoutY="208.0" stroke="WHITE" strokeType="INSIDE" width="91.0" />
+      <Label layoutX="99.0" layoutY="14.0" text="Calculadora de edades!" textAlignment="CENTER" textFill="#04616b">
+         <font>
+            <Font name="Showcard Gothic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="65.0" text="Resultado:">
+         <font>
+            <Font name="Showcard Gothic" size="14.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="151.0" layoutY="60.0" stroke="BLACK" strokeType="INSIDE" width="338.0" />
+      <Label fx:id="resultado" layoutX="151.0" layoutY="60.0" prefHeight="28.0" prefWidth="338.0">
+         <font>
+            <Font name="Microsoft New Tai Lue" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="110.0" text="Crear una persona:">
+         <font>
+            <Font name="Showcard Gothic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="299.0" layoutY="110.0" text="Operaciones de edad:">
+         <font>
+            <Font name="Showcard Gothic" size="13.0" />
+         </font>
+      </Label>
+      <Line endX="-14.0" endY="218.0" layoutX="264.0" layoutY="153.0" startX="-14.0" startY="-42.0" />
+      <TextField fx:id="nombre" layoutX="33.0" layoutY="166.0" promptText="Nombre" style="-fx-background-color: SEASHELL;" />
+      <TextField fx:id="edad" layoutX="33.0" layoutY="261.0" promptText="Edad" style="-fx-background-color: SEASHELL;" />
+      <MenuButton layoutX="33.0" layoutY="210.0" mnemonicParsing="false" text="Provincia">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#cartago" text="Cartago" />
+          <MenuItem mnemonicParsing="false" onAction="#sj" text="San José" />
+            <MenuItem mnemonicParsing="false" onAction="#alaj" text="Alajuela" />
+            <MenuItem mnemonicParsing="false" onAction="#flor" text="Heredia" />
+            <MenuItem mnemonicParsing="false" onAction="#sand" text="Puntarenas" />
+            <MenuItem mnemonicParsing="false" onAction="#guana" text="Guanacas" />
+            <MenuItem mnemonicParsing="false" onAction="#mimon" text="Limón" />
+        </items>
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </MenuButton>
+      <Label fx:id="provincia" layoutX="132.0" layoutY="214.0">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="61.0" layoutY="305.0" mnemonicParsing="false" onMouseClicked="#crearPersona" prefHeight="67.0" prefWidth="116.0" style="-fx-background-color: darkcyan;" text="Crear Persona" wrapText="true" />
+      <Label layoutX="33.0" layoutY="137.0" text="Personas creadas:">
+         <font>
+            <Font name="Showcard Gothic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="personasCreadasCont" layoutX="163.0" layoutY="137.0" text="0">
+         <font>
+            <Font name="Showcard Gothic" size="13.0" />
+         </font>
+      </Label>
+      <VBox layoutX="262.0" layoutY="153.0" prefHeight="53.0" prefWidth="110.0">
+         <children>
+            <MenuButton mnemonicParsing="false" text="Persona 1:">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+            <MenuButton mnemonicParsing="false" text="Persona 2:">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </MenuButton>
+         </children>
+      </VBox>
+      <Label fx:id="nombrePersona1" layoutX="372.0" layoutY="157.0" prefHeight="18.0" prefWidth="116.0" text="Nombre Persona">
+         <font>
+            <Font name="Showcard Gothic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="nombrePersona2" layoutX="372.0" layoutY="183.0" prefHeight="18.0" prefWidth="116.0" text="Nombre Persona">
+         <font>
+            <Font name="Showcard Gothic" size="13.0" />
+         </font>
+      </Label>
+      <HBox focusTraversable="true" layoutX="253.0" layoutY="229.0" prefHeight="37.0" prefWidth="239.0">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#suma" prefHeight="40.0" prefWidth="68.0" style="-fx-background-color: darkcyan;" text="+" />
+            <Button mnemonicParsing="false" onMouseClicked="#resta" prefHeight="39.0" prefWidth="62.0" style="-fx-background-color: darkcyan;" text="-" />
+            <Button mnemonicParsing="false" onMouseClicked="#multi" prefHeight="39.0" prefWidth="57.0" style="-fx-background-color: darkcyan;" text="*" />
+            <Button mnemonicParsing="false" onMouseClicked="#divi" prefHeight="40.0" prefWidth="54.0" style="-fx-background-color: darkcyan;" text="/" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
