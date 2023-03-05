@@ -1,0 +1,556 @@
+Index: src/main/resources/com/example/tarea1/hello-view.fxml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<?import javafx.scene.control.Button?>\r\n<?import javafx.scene.control.Label?>\r\n<?import javafx.scene.control.MenuButton?>\r\n<?import javafx.scene.control.MenuItem?>\r\n<?import javafx.scene.control.TextField?>\r\n<?import javafx.scene.layout.AnchorPane?>\r\n<?import javafx.scene.layout.HBox?>\r\n<?import javafx.scene.layout.VBox?>\r\n<?import javafx.scene.shape.Line?>\r\n<?import javafx.scene.shape.Rectangle?>\r\n<?import javafx.scene.text.Font?>\r\n\r\n<AnchorPane maxHeight=\"-Infinity\" maxWidth=\"-Infinity\" minHeight=\"-Infinity\" minWidth=\"-Infinity\" prefHeight=\"400.0\" prefWidth=\"500.0\" style=\"-fx-background-color: azure;\" xmlns=\"http://javafx.com/javafx/19\" xmlns:fx=\"http://javafx.com/fxml/1\" fx:controller=\"com.example.tarea1.HelloController\">\r\n   <children>\r\n      <Rectangle arcHeight=\"5.0\" arcWidth=\"5.0\" fill=\"SEASHELL\" height=\"28.0\" layoutX=\"129.0\" layoutY=\"208.0\" stroke=\"WHITE\" strokeType=\"INSIDE\" width=\"91.0\" />\r\n      <Label layoutX=\"99.0\" layoutY=\"14.0\" text=\"Calculadora de edades!\" textAlignment=\"CENTER\" textFill=\"#04616b\">\r\n         <font>\r\n            <Font name=\"Showcard Gothic\" size=\"24.0\" />\r\n         </font>\r\n      </Label>\r\n      <Label layoutX=\"57.0\" layoutY=\"65.0\" text=\"Resultado:\">\r\n         <font>\r\n            <Font name=\"Showcard Gothic\" size=\"14.0\" />\r\n         </font>\r\n      </Label>\r\n      <Rectangle arcHeight=\"5.0\" arcWidth=\"5.0\" fill=\"WHITE\" height=\"28.0\" layoutX=\"151.0\" layoutY=\"60.0\" stroke=\"BLACK\" strokeType=\"INSIDE\" width=\"338.0\" />\r\n      <Label fx:id=\"resultado\" layoutX=\"151.0\" layoutY=\"60.0\" prefHeight=\"28.0\" prefWidth=\"338.0\">\r\n         <font>\r\n            <Font name=\"Microsoft New Tai Lue\" size=\"18.0\" />\r\n         </font>\r\n      </Label>\r\n      <Label layoutX=\"33.0\" layoutY=\"110.0\" text=\"Crear una persona:\">\r\n         <font>\r\n            <Font name=\"Showcard Gothic\" size=\"13.0\" />\r\n         </font>\r\n      </Label>\r\n      <Label layoutX=\"299.0\" layoutY=\"110.0\" text=\"Operaciones de edad:\">\r\n         <font>\r\n            <Font name=\"Showcard Gothic\" size=\"13.0\" />\r\n         </font>\r\n      </Label>\r\n      <Line endX=\"-14.0\" endY=\"218.0\" layoutX=\"264.0\" layoutY=\"153.0\" startX=\"-14.0\" startY=\"-42.0\" />\r\n      <TextField fx:id=\"nombre\" layoutX=\"33.0\" layoutY=\"166.0\" promptText=\"Nombre\" style=\"-fx-background-color: SEASHELL;\" />\r\n      <TextField fx:id=\"edad\" layoutX=\"33.0\" layoutY=\"261.0\" promptText=\"Edad\" style=\"-fx-background-color: SEASHELL;\" />\r\n      <MenuButton layoutX=\"33.0\" layoutY=\"210.0\" mnemonicParsing=\"false\" text=\"Provincia\">\r\n        <items>\r\n          <MenuItem mnemonicParsing=\"false\" onAction=\"#cartago\" text=\"Cartago\" />\r\n          <MenuItem mnemonicParsing=\"false\" onAction=\"#sj\" text=\"San José\" />\r\n            <MenuItem mnemonicParsing=\"false\" onAction=\"#alaj\" text=\"Alajuela\" />\r\n            <MenuItem mnemonicParsing=\"false\" onAction=\"#flor\" text=\"Heredia\" />\r\n            <MenuItem mnemonicParsing=\"false\" onAction=\"#sand\" text=\"Puntarenas\" />\r\n            <MenuItem mnemonicParsing=\"false\" onAction=\"#guana\" text=\"Guanacas\" />\r\n            <MenuItem mnemonicParsing=\"false\" onAction=\"#mimon\" text=\"Limón\" />\r\n        </items>\r\n         <font>\r\n            <Font name=\"Times New Roman\" size=\"13.0\" />\r\n         </font>\r\n      </MenuButton>\r\n      <Label fx:id=\"provincia\" layoutX=\"132.0\" layoutY=\"214.0\">\r\n         <font>\r\n            <Font name=\"Times New Roman\" size=\"13.0\" />\r\n         </font>\r\n      </Label>\r\n      <Button layoutX=\"61.0\" layoutY=\"305.0\" mnemonicParsing=\"false\" onMouseClicked=\"#crearPersona\" prefHeight=\"67.0\" prefWidth=\"116.0\" style=\"-fx-background-color: darkcyan;\" text=\"Crear Persona\" wrapText=\"true\" />\r\n      <Label layoutX=\"33.0\" layoutY=\"137.0\" text=\"Personas creadas:\">\r\n         <font>\r\n            <Font name=\"Showcard Gothic\" size=\"13.0\" />\r\n         </font>\r\n      </Label>\r\n      <Label fx:id=\"personasCreadasCont\" layoutX=\"163.0\" layoutY=\"137.0\" text=\"0\">\r\n         <font>\r\n            <Font name=\"Showcard Gothic\" size=\"13.0\" />\r\n         </font>\r\n      </Label>\r\n      <VBox layoutX=\"262.0\" layoutY=\"153.0\" prefHeight=\"53.0\" prefWidth=\"110.0\">\r\n         <children>\r\n            <MenuButton mnemonicParsing=\"false\" text=\"Persona 1:\">\r\n              <items>\r\n                <MenuItem mnemonicParsing=\"false\" text=\"Action 1\" />\r\n                <MenuItem mnemonicParsing=\"false\" text=\"Action 2\" />\r\n              </items>\r\n            </MenuButton>\r\n            <MenuButton mnemonicParsing=\"false\" text=\"Persona 2:\">\r\n              <items>\r\n                <MenuItem mnemonicParsing=\"false\" text=\"Action 1\" />\r\n                <MenuItem mnemonicParsing=\"false\" text=\"Action 2\" />\r\n              </items>\r\n            </MenuButton>\r\n         </children>\r\n      </VBox>\r\n      <Label fx:id=\"nombrePersona1\" layoutX=\"372.0\" layoutY=\"157.0\" prefHeight=\"18.0\" prefWidth=\"116.0\" text=\"Nombre Persona\">\r\n         <font>\r\n            <Font name=\"Showcard Gothic\" size=\"13.0\" />\r\n         </font>\r\n      </Label>\r\n      <Label fx:id=\"nombrePersona2\" layoutX=\"372.0\" layoutY=\"183.0\" prefHeight=\"18.0\" prefWidth=\"116.0\" text=\"Nombre Persona\">\r\n         <font>\r\n            <Font name=\"Showcard Gothic\" size=\"13.0\" />\r\n         </font>\r\n      </Label>\r\n      <HBox focusTraversable=\"true\" layoutX=\"253.0\" layoutY=\"229.0\" prefHeight=\"37.0\" prefWidth=\"239.0\">\r\n         <children>\r\n            <Button mnemonicParsing=\"false\" onMouseClicked=\"#suma\" prefHeight=\"40.0\" prefWidth=\"68.0\" style=\"-fx-background-color: darkcyan;\" text=\"+\" />\r\n            <Button mnemonicParsing=\"false\" onMouseClicked=\"#resta\" prefHeight=\"39.0\" prefWidth=\"62.0\" style=\"-fx-background-color: darkcyan;\" text=\"-\" />\r\n            <Button mnemonicParsing=\"false\" onMouseClicked=\"#multi\" prefHeight=\"39.0\" prefWidth=\"57.0\" style=\"-fx-background-color: darkcyan;\" text=\"*\" />\r\n            <Button mnemonicParsing=\"false\" onMouseClicked=\"#divi\" prefHeight=\"40.0\" prefWidth=\"54.0\" style=\"-fx-background-color: darkcyan;\" text=\"/\" />\r\n         </children>\r\n      </HBox>\r\n   </children>\r\n</AnchorPane>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/com/example/tarea1/hello-view.fxml b/src/main/resources/com/example/tarea1/hello-view.fxml
+--- a/src/main/resources/com/example/tarea1/hello-view.fxml	(revision 771b304bb0d8335029867ec786b56b8974cf5c72)
++++ b/src/main/resources/com/example/tarea1/hello-view.fxml	(date 1678054573302)
+@@ -4,6 +4,7 @@
+ <?import javafx.scene.control.Label?>
+ <?import javafx.scene.control.MenuButton?>
+ <?import javafx.scene.control.MenuItem?>
++<?import javafx.scene.control.Spinner?>
+ <?import javafx.scene.control.TextField?>
+ <?import javafx.scene.layout.AnchorPane?>
+ <?import javafx.scene.layout.HBox?>
+@@ -42,8 +43,7 @@
+          </font>
+       </Label>
+       <Line endX="-14.0" endY="218.0" layoutX="264.0" layoutY="153.0" startX="-14.0" startY="-42.0" />
+-      <TextField fx:id="nombre" layoutX="33.0" layoutY="166.0" promptText="Nombre" style="-fx-background-color: SEASHELL;" />
+-      <TextField fx:id="edad" layoutX="33.0" layoutY="261.0" promptText="Edad" style="-fx-background-color: SEASHELL;" />
++      <TextField fx:id="nombre" layoutX="95.0" layoutY="167.0" promptText="Nombre" style="-fx-background-color: SEASHELL;" />
+       <MenuButton layoutX="33.0" layoutY="210.0" mnemonicParsing="false" text="Provincia">
+         <items>
+           <MenuItem mnemonicParsing="false" onAction="#cartago" text="Cartago" />
+@@ -74,39 +74,49 @@
+             <Font name="Showcard Gothic" size="13.0" />
+          </font>
+       </Label>
+-      <VBox layoutX="262.0" layoutY="153.0" prefHeight="53.0" prefWidth="110.0">
++      <VBox layoutX="253.0" layoutY="154.0" prefHeight="53.0" prefWidth="110.0">
+          <children>
+             <MenuButton mnemonicParsing="false" text="Persona 1:">
+               <items>
+-                <MenuItem mnemonicParsing="false" text="Action 1" />
+-                <MenuItem mnemonicParsing="false" text="Action 2" />
++                <MenuItem mnemonicParsing="false" onAction="#persona11" text="Persona 1" />
++                <MenuItem mnemonicParsing="false" onAction="#persona12" text="Persona 2" />
++                  <MenuItem mnemonicParsing="false" onAction="#persona13" text="Persona 3" />
++                  <MenuItem mnemonicParsing="false" onAction="#persona14" text="Persona 4" />
+               </items>
+             </MenuButton>
+             <MenuButton mnemonicParsing="false" text="Persona 2:">
+               <items>
+-                <MenuItem mnemonicParsing="false" text="Action 1" />
+-                <MenuItem mnemonicParsing="false" text="Action 2" />
++                <MenuItem mnemonicParsing="false" onAction="#persona21" text="Persona 1" />
++                <MenuItem mnemonicParsing="false" onAction="#persona22" text="Persona 2" />
++                  <MenuItem mnemonicParsing="false" onAction="#persona23" text="Persona 3" />
++                  <MenuItem mnemonicParsing="false" onAction="#persona24" text="Persona 4" />
+               </items>
+             </MenuButton>
+          </children>
+       </VBox>
+-      <Label fx:id="nombrePersona1" layoutX="372.0" layoutY="157.0" prefHeight="18.0" prefWidth="116.0" text="Nombre Persona">
++      <Label fx:id="nombrePersona1" layoutX="355.0" layoutY="157.0" prefHeight="18.0" prefWidth="145.0">
+          <font>
+-            <Font name="Showcard Gothic" size="13.0" />
++            <Font name="Showcard Gothic" size="11.0" />
+          </font>
+       </Label>
+-      <Label fx:id="nombrePersona2" layoutX="372.0" layoutY="183.0" prefHeight="18.0" prefWidth="116.0" text="Nombre Persona">
++      <Label fx:id="nombrePersona2" layoutX="355.0" layoutY="183.0" prefHeight="18.0" prefWidth="145.0">
+          <font>
+-            <Font name="Showcard Gothic" size="13.0" />
++            <Font name="Showcard Gothic" size="11.0" />
+          </font>
+       </Label>
+-      <HBox focusTraversable="true" layoutX="253.0" layoutY="229.0" prefHeight="37.0" prefWidth="239.0">
++      <HBox focusTraversable="true" layoutX="253.0" layoutY="269.0" prefHeight="37.0" prefWidth="239.0">
+          <children>
+             <Button mnemonicParsing="false" onMouseClicked="#suma" prefHeight="40.0" prefWidth="68.0" style="-fx-background-color: darkcyan;" text="+" />
+-            <Button mnemonicParsing="false" onMouseClicked="#resta" prefHeight="39.0" prefWidth="62.0" style="-fx-background-color: darkcyan;" text="-" />
++            <Button mnemonicParsing="false" onMouseClicked="#resta" prefHeight="39.0" prefWidth="64.0" style="-fx-background-color: darkcyan;" text="-" />
+             <Button mnemonicParsing="false" onMouseClicked="#multi" prefHeight="39.0" prefWidth="57.0" style="-fx-background-color: darkcyan;" text="*" />
+             <Button mnemonicParsing="false" onMouseClicked="#divi" prefHeight="40.0" prefWidth="54.0" style="-fx-background-color: darkcyan;" text="/" />
+          </children>
+       </HBox>
++      <Spinner fx:id="ageSpinner" editable="true" layoutX="33.0" layoutY="256.0" style="-fx-background-color: darkcyan;" />
++      <Label fx:id="nombrePersona11" layoutX="26.0" layoutY="171.0" prefHeight="18.0" prefWidth="63.0" text="Nombre:">
++         <font>
++            <Font name="Showcard Gothic" size="13.0" />
++         </font>
++      </Label>
+    </children>
+ </AnchorPane>
+Index: src/main/java/com/example/tarea1/HelloController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.tarea1;\r\n\r\n//Imports para usar el JavaFX\r\nimport javafx.event.ActionEvent;\r\nimport javafx.fxml.FXML;\r\nimport javafx.scene.image.Image;\r\nimport javafx.scene.input.MouseEvent;\r\nimport javafx.scene.control.Label;\r\nimport javafx.scene.control.TextField;\r\n\r\n//Clase controlador\r\npublic class HelloController {\r\n\r\n    //Contador de personas creadas\r\n    int contadorPersonas = 0;\r\n    //Labels\r\n    @FXML\r\n    private Label personasCreadasCont;\r\n\r\n    @FXML\r\n    private Label nombrePersona1;\r\n\r\n    @FXML\r\n    private Label nombrePersona2;\r\n\r\n    @FXML\r\n    private Label provincia;\r\n\r\n    //Label que cambia al seleccionar una provincia y funciona como entrada de texto\r\n    @FXML\r\n    private Label resultado;\r\n\r\n    //Text fields para getters de texto\r\n    @FXML\r\n    private TextField nombre;\r\n\r\n    @FXML\r\n    private TextField edad;\r\n    //Función para el botón de crear persona\r\n    @FXML\r\n    void crearPersona(MouseEvent event) {\r\n        while (contadorPersonas != 5) {\r\n            if (nombre.getText() == null || nombre.getText().trim().isEmpty()) {\r\n                //Verificador de entrada de texto del nombre\r\n                resultado.setText(\"Debe ingresar su nombre!\");\r\n                break;\r\n            }\r\n            if (edad.getText() == null || edad.getText().trim().isEmpty()) {\r\n                //Verificador de entrada de texto de la edad\r\n                resultado.setText(\"Debe ingresar su edad!\");\r\n                break;\r\n            }\r\n            if (provincia.getText()==null || provincia.getText().trim().isEmpty()) {\r\n                //Verificador de entrada de texto de la provincia\r\n                resultado.setText(\"Debe ingresar su provincia!\");\r\n                break;\r\n            }\r\n            if (contadorPersonas == 0) {\r\n                //Creador de la primera persona\r\n                Persona persona1 = new Persona(nombre.getText(), provincia.getText(), Integer.parseInt(edad.getText()));\r\n                personasCreadasCont.setText(\"1\");\r\n                persona1.showPersona();\r\n                contadorPersonas++;\r\n                break;\r\n            }\r\n            if (contadorPersonas == 1) {\r\n                //Creador de la segunda persona\r\n                Persona persona2 = new Persona(nombre.getText(), provincia.getText(), Integer.parseInt(edad.getText()));\r\n                personasCreadasCont.setText(\"2\");\r\n                contadorPersonas++;\r\n                persona2.showPersona();\r\n                break;\r\n            }\r\n            if (contadorPersonas == 2) {\r\n                //Creador de la tercera persona\r\n                Persona persona3 = new Persona(nombre.getText(), provincia.getText(), Integer.parseInt(edad.getText()));\r\n                personasCreadasCont.setText(\"3\");\r\n                contadorPersonas++;\r\n                persona3.showPersona();\r\n                break;\r\n            }\r\n            if (contadorPersonas == 3) {\r\n                //Creador de la cuarta y última persona\r\n                Persona persona4 = new Persona(nombre.getText(), provincia.getText(), Integer.parseInt(edad.getText()));\r\n                personasCreadasCont.setText(\"4\");\r\n                contadorPersonas++;\r\n                persona4.showPersona();\r\n                break;\r\n            }\r\n            if (contadorPersonas == 4){\r\n                //Evita que se creen más de 4 personas\r\n                resultado.setText(\"Cantidad máxima de personas alcanzadas\");\r\n                break;\r\n            }\r\n        }\r\n    }\r\n//Estos son los setters de la provincia con la dropdown list, funcionan como setter de texto para el label \"provincia\"\r\n    @FXML\r\n    void alaj(ActionEvent event) {\r\n        provincia.setText(\"Alajuela\");\r\n    }\r\n\r\n    @FXML\r\n    void cartago(ActionEvent event) {\r\n        provincia.setText(\"Cartago\");\r\n    }\r\n\r\n    @FXML\r\n    void flor(ActionEvent event) {\r\n        provincia.setText(\"Heredia\");\r\n    }\r\n\r\n    @FXML\r\n    void guana(ActionEvent event) {\r\n        provincia.setText(\"Guanacaste\");\r\n    }\r\n\r\n    @FXML\r\n    void mimon(ActionEvent event) {\r\n        provincia.setText(\"Limón\");\r\n    }\r\n\r\n    @FXML\r\n    void sand(ActionEvent event) {\r\n        provincia.setText(\"Puntarenas\");\r\n    }\r\n\r\n    @FXML\r\n    void sj(ActionEvent event) {\r\n        provincia.setText(\"San José\");\r\n    }\r\n\r\n    //Funciones para las operaciones de edad\r\n    @FXML\r\n    void divi(MouseEvent event) {\r\n\r\n    }\r\n    @FXML\r\n    void multi(MouseEvent event) {\r\n\r\n    }\r\n    @FXML\r\n    void resta(MouseEvent event) {\r\n\r\n    }\r\n    @FXML\r\n    void suma(MouseEvent event) {\r\n\r\n    }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/tarea1/HelloController.java b/src/main/java/com/example/tarea1/HelloController.java
+--- a/src/main/java/com/example/tarea1/HelloController.java	(revision 5aa86f6a7dca5c015aab3fc2387460c3e1246221)
++++ b/src/main/java/com/example/tarea1/HelloController.java	(date 1678055388943)
+@@ -3,16 +3,30 @@
+ //Imports para usar el JavaFX
+ import javafx.event.ActionEvent;
+ import javafx.fxml.FXML;
+-import javafx.scene.image.Image;
++import javafx.fxml.Initializable;
++import javafx.scene.control.Spinner;
++import javafx.scene.control.SpinnerValueFactory;
+ import javafx.scene.input.MouseEvent;
+ import javafx.scene.control.Label;
+ import javafx.scene.control.TextField;
++import java.net.URL;
++import java.util.ResourceBundle;
+ 
+ //Clase controlador
+-public class HelloController {
+-
+-    //Contador de personas creadas
++public class HelloController implements Initializable {
++//Funciones de creador de personas
++    //Valores a utilizar para la calculadora
+     int contadorPersonas = 0;
++    String nameper1 = "";
++    String nameper2 = "";
++    String nameper3 = "";
++    String nameper4 = "";
++
++    int edad1 = 0;
++    int edad2 = 0;
++    int edad3 = 0;
++    int edad4 = 0;
++
+     //Labels
+     @FXML
+     private Label personasCreadasCont;
+@@ -30,13 +44,16 @@
+     @FXML
+     private Label resultado;
+ 
+-    //Text fields para getters de texto
++    //Text fields para getters
+     @FXML
+     private TextField nombre;
+ 
+     @FXML
+-    private TextField edad;
++    private Spinner<Integer> ageSpinner;
++    SpinnerValueFactory<Integer> svf = new SpinnerValueFactory.IntegerSpinnerValueFactory(0,110,1);
+     //Función para el botón de crear persona
++
++    //Iniciador de la creación de personas
+     @FXML
+     void crearPersona(MouseEvent event) {
+         while (contadorPersonas != 5) {
+@@ -44,11 +61,6 @@
+                 //Verificador de entrada de texto del nombre
+                 resultado.setText("Debe ingresar su nombre!");
+                 break;
+-            }
+-            if (edad.getText() == null || edad.getText().trim().isEmpty()) {
+-                //Verificador de entrada de texto de la edad
+-                resultado.setText("Debe ingresar su edad!");
+-                break;
+             }
+             if (provincia.getText()==null || provincia.getText().trim().isEmpty()) {
+                 //Verificador de entrada de texto de la provincia
+@@ -57,39 +69,51 @@
+             }
+             if (contadorPersonas == 0) {
+                 //Creador de la primera persona
+-                Persona persona1 = new Persona(nombre.getText(), provincia.getText(), Integer.parseInt(edad.getText()));
++                Persona persona1 = new Persona(nombre.getText(), provincia.getText(), ageSpinner.getValue());
++                nameper1 = persona1.getNombre();
++                edad1 = persona1.getEdad();
+                 personasCreadasCont.setText("1");
++                System.out.println("Persona 1: ");
+                 persona1.showPersona();
+                 contadorPersonas++;
+                 break;
+             }
+             if (contadorPersonas == 1) {
+                 //Creador de la segunda persona
+-                Persona persona2 = new Persona(nombre.getText(), provincia.getText(), Integer.parseInt(edad.getText()));
++                Persona persona2 = new Persona(nombre.getText(), provincia.getText(), ageSpinner.getValue());
+                 personasCreadasCont.setText("2");
++                nameper2 = persona2.getNombre();
++                edad2 = persona2.getEdad();
+                 contadorPersonas++;
++                System.out.println("Persona 2: ");
+                 persona2.showPersona();
+                 break;
+             }
+             if (contadorPersonas == 2) {
+                 //Creador de la tercera persona
+-                Persona persona3 = new Persona(nombre.getText(), provincia.getText(), Integer.parseInt(edad.getText()));
++                Persona persona3 = new Persona(nombre.getText(), provincia.getText(), ageSpinner.getValue());
+                 personasCreadasCont.setText("3");
++                nameper3 = persona3.getNombre();
++                edad3 = persona3.getEdad();
+                 contadorPersonas++;
++                System.out.println("Persona 3: ");
+                 persona3.showPersona();
+                 break;
+             }
+             if (contadorPersonas == 3) {
+                 //Creador de la cuarta y última persona
+-                Persona persona4 = new Persona(nombre.getText(), provincia.getText(), Integer.parseInt(edad.getText()));
++                Persona persona4 = new Persona(nombre.getText(), provincia.getText(), ageSpinner.getValue());
+                 personasCreadasCont.setText("4");
++                nameper4 = persona4.getNombre();
++                edad4 = persona4.getEdad();
+                 contadorPersonas++;
++                System.out.println("Persona 4:");
+                 persona4.showPersona();
+                 break;
+             }
+             if (contadorPersonas == 4){
+                 //Evita que se creen más de 4 personas
+-                resultado.setText("Cantidad máxima de personas alcanzadas");
++                resultado.setText("Cantidad máxima de personas alcanzada!");
+                 break;
+             }
+         }
+@@ -129,23 +153,148 @@
+     void sj(ActionEvent event) {
+         provincia.setText("San José");
+     }
++    //------------------------------------------------------------------------------
++    //Funciones para la calculadora de edades
++
++    int dato1 = 0; //Este es el primer dato que va a usar la calculadora
++    int dato2 = 0;//Este es el segundo dato que usa
++
++    //Etos son los setters para los datos que usa la calculadora
++
++    //Dropdown list de la primera persona
++    @FXML
++    void persona11(ActionEvent event) {
++        if (nameper1 == "") {
++            nombrePersona1.setText("Persona no creada aún");
++            dato1 = edad1;
++            System.out.println("Dato 1: " + dato1);
++        } else {
++            nombrePersona1.setText(nameper1);
++            dato1 = edad1;
++            System.out.println("Dato 1: " + dato1);
++        }
++    }
++    @FXML
++    void persona12(ActionEvent event) {
++        if (nameper2 == "") {
++            nombrePersona1.setText("Persona no creada aún");
++            dato1 = edad1;
++            System.out.println("Dato 1: " + dato1);
++        } else {
++            nombrePersona1.setText(nameper2);
++            dato1 = edad1;
++            System.out.println("Dato 1: " + dato1);
++        }
++    }
++
++    @FXML
++    void persona13(ActionEvent event) {
++        if (nameper3 == "") {
++            nombrePersona1.setText("Persona no creada aún");
++            dato1 = edad1;
++            System.out.println("Dato 1: " + dato1);
++        } else {
++            nombrePersona1.setText(nameper3);
++            dato1 = edad1;
++            System.out.println("Dato 1: " + dato1);
++        }
++    }
++
++    @FXML
++    void persona14(ActionEvent event) {
++        if (nameper4 == "") {
++            nombrePersona1.setText("Persona no creada aún");
++            dato1 = edad1;
++            System.out.println("Dato 1: " + dato1);
++        } else {
++            nombrePersona1.setText(nameper4);
++            dato1 = edad1;
++            System.out.println("Dato 1: " + dato1);
++        }
++    }
++
++    //Dropdown list de la segunda persona
++    @FXML
++    void persona21(ActionEvent event) {
++        if (nameper1 == "") {
++            nombrePersona2.setText("Persona no creada aún");
++            dato2 = edad1;
++            System.out.println("Dato 2: " + dato2);
++        } else {
++            nombrePersona2.setText(nameper1);
++            dato2 = edad1;
++            System.out.println("Dato 2: " + dato2);
++        }
++    }
++
++    @FXML
++    void persona22(ActionEvent event) {
++        if (nameper2 == "") {
++            nombrePersona2.setText("Persona no creada aún");
++            dato2 = edad1;
++            System.out.println("Dato 2: " + dato2);
++        } else {
++            nombrePersona2.setText(nameper2);
++            dato2 = edad1;
++            System.out.println("Dato 2: " + dato2);
++        }
++    }
++
++    @FXML
++    void persona23(ActionEvent event) {
++        if (nameper3 == "") {
++            nombrePersona2.setText("Persona no creada aún");
++            dato2 = edad1;
++            System.out.println("Dato 2: " + dato2);
++        } else {
++            nombrePersona2.setText(nameper3);
++            dato2 = edad1;
++            System.out.println("Dato 2: " + dato2);
++        }
++    }
++
++    @FXML
++    void persona24(ActionEvent event) {
++        if (nameper4 == "") {
++            nombrePersona2.setText("Persona no creada aún");
++            dato2 = edad1;
++            System.out.println("Dato 2: " + dato2);
++        } else {
++            nombrePersona2.setText(nameper4);
++            dato2 = edad1;
++            System.out.println("Dato 2: " + dato2);
++        }
++    }
+ 
+     //Funciones para las operaciones de edad
+     @FXML
+     void divi(MouseEvent event) {
+-
++        if (dato1 == 0 & dato2 != 0) {
++            dato1=1;
++            resultado.setText(Integer.toString(dato1/dato2));
++        }if(dato2==0 & dato1 != 0){
++            dato2=1;
++            resultado.setText(Integer.toString(dato1/dato2));
++        }else{resultado.setText(Integer.toString(dato1/dato2));}
+     }
+     @FXML
+     void multi(MouseEvent event) {
+-
++        if (dato1 == 0 & dato2 != 0) {
++            dato1=1;
++            resultado.setText(Integer.toString(dato1*dato2));
++        }if(dato2==0 & dato1 != 0){
++            dato2=1;
++            resultado.setText(Integer.toString(dato1*dato2));
++        }else{resultado.setText(Integer.toString(dato1*dato2));}
+     }
+     @FXML
+-    void resta(MouseEvent event) {
+-
+-    }
++    void resta(MouseEvent event) {resultado.setText(Integer.toString(dato1-dato2));}
+     @FXML
+-    void suma(MouseEvent event) {
++    void suma(MouseEvent event) {resultado.setText(Integer.toString(dato1+dato2));}
+ 
++    //Iniciador de los valores para el spinner de la edad
++    @Override
++    public void initialize(URL url, ResourceBundle resourceBundle) {
++        ageSpinner.setValueFactory(svf);
+     }
+-
+ }
+\ No newline at end of file
+Index: src/main/java/com/example/tarea1/Persona.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.tarea1;\r\n\r\npublic class Persona {\r\n    int edad;\r\n    String nombre;\r\n    String provincia;\r\n\r\n    public Persona(String nombre, String provincia, int edad) {\r\n        this.nombre = nombre;\r\n        this.provincia = provincia;\r\n        this.edad = edad;\r\n    }\r\n    public void showPersona(){\r\n        System.out.println(\"------------------------\");\r\n        System.out.println(getNombre());\r\n        System.out.println(getEdad());\r\n        System.out.println(getProvincia());\r\n    }\r\n    //Getter para la edad\r\n    public int getEdad() {\r\n        return edad;\r\n    }\r\n    //Getter para el nombre\r\n    public String getNombre() {\r\n        return nombre;\r\n    }\r\n    //Getter para la provincia\r\n    public String getProvincia() {\r\n        return provincia;\r\n    }\r\n    //Setter para la edad\r\n    public void setEdad(int edad) {\r\n        this.edad = edad;\r\n    }\r\n    ///Setter para el nombre\r\n    public void setNombre(String nombre) {\r\n        this.nombre = nombre;\r\n    }\r\n    //Setter para la provincia\r\n    public void setProvincia(String provincia) {\r\n        this.provincia = provincia;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/tarea1/Persona.java b/src/main/java/com/example/tarea1/Persona.java
+--- a/src/main/java/com/example/tarea1/Persona.java	(revision 771b304bb0d8335029867ec786b56b8974cf5c72)
++++ b/src/main/java/com/example/tarea1/Persona.java	(date 1678053981858)
+@@ -11,10 +11,10 @@
+         this.edad = edad;
+     }
+     public void showPersona(){
+-        System.out.println("------------------------");
+         System.out.println(getNombre());
+         System.out.println(getEdad());
+         System.out.println(getProvincia());
++        System.out.println("------------------------");
+     }
+     //Getter para la edad
+     public int getEdad() {
+Index: src/main/java/com/example/tarea1/HelloApplication.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/example/tarea1/HelloApplication.java b/src/main/java/com/example/tarea1/Main.java
+rename from src/main/java/com/example/tarea1/HelloApplication.java
+rename to src/main/java/com/example/tarea1/Main.java
+--- a/src/main/java/com/example/tarea1/HelloApplication.java	(revision 771b304bb0d8335029867ec786b56b8974cf5c72)
++++ b/src/main/java/com/example/tarea1/Main.java	(date 1678053981853)
+@@ -1,5 +1,5 @@
+ package com.example.tarea1;
+-
++//Imports de JavaFX
+ import javafx.application.Application;
+ import javafx.fxml.FXMLLoader;
+ import javafx.scene.Scene;
+@@ -7,10 +7,11 @@
+ 
+ import java.io.IOException;
+ 
+-public class HelloApplication extends Application {
++public class Main extends Application {
++    //Iniciador para la interfaz del JavaFX
+     @Override
+     public void start(Stage stage) throws IOException {
+-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
++        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("hello-view.fxml"));
+         Scene scene = new Scene(fxmlLoader.load());
+         stage.setTitle("Age calculator");
+         stage.setScene(scene);
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"e1c86d66-c292-44f0-bc1c-b2163986f8cd\" name=\"Changes\" comment=\"Inicio del proyecto\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/com/example/tarea1/Persona.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloApplication.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloApplication.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/com/example/tarea1/hello-view.fxml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/com/example/tarea1/hello-view.fxml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"importingSettings\">\r\n      <MavenImportingSettings>\r\n        <option name=\"workspaceImportEnabled\" value=\"true\" />\r\n      </MavenImportingSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2MWKrBIimCxVHWqjmY27Y1GTAz3\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"C:/Users/aleja/iCloudDrive/TEC/Progra/Estructura de Datos I/Tarea1/src/main/java/com/example/tarea1\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"project.structure.last.edited\": \"Global Libraries\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"settings.editor.selected.configurable\": \"preferences.lookFeel\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\aleja\\iCloudDrive\\TEC\\Progra\\Estructura de Datos I\\Tarea1\\src\\main\\java\\com\\example\\tarea1\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"App\" type=\"Application\" factoryName=\"Application\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.example.tarea1.HelloApplication\" />\r\n      <module name=\"Tarea1\" />\r\n      <option name=\"VM_PARAMETERS\" value=\"--module-path &quot;C:\\Users\\aleja\\Downloads\\javafx-sdk-19.0.2.1\\lib&quot; --add-modules javafx.controls,javafx.fxml\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"e1c86d66-c292-44f0-bc1c-b2163986f8cd\" name=\"Changes\" comment=\"\" />\r\n      <created>1677878094644</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1677878094644</updated>\r\n      <workItem from=\"1677878095738\" duration=\"2400000\" />\r\n      <workItem from=\"1677907122298\" duration=\"632000\" />\r\n      <workItem from=\"1677907830337\" duration=\"156000\" />\r\n      <workItem from=\"1677907999833\" duration=\"213000\" />\r\n      <workItem from=\"1677908271184\" duration=\"59000\" />\r\n      <workItem from=\"1677908934077\" duration=\"3712000\" />\r\n      <workItem from=\"1677955579207\" duration=\"4215000\" />\r\n      <workItem from=\"1677981187875\" duration=\"1393000\" />\r\n      <workItem from=\"1678032387151\" duration=\"6423000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Inicio del proyecto\">\r\n      <created>1677878411600</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1677878411600</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Inicio del proyecto\">\r\n      <created>1677878447056</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1677878447056</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Inicio del proyecto\">\r\n      <created>1677878637458</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1677878637458</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"4\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Inicio del proyecto\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Inicio del proyecto\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 771b304bb0d8335029867ec786b56b8974cf5c72)
++++ b/.idea/workspace.xml	(date 1678055205129)
+@@ -4,11 +4,11 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="e1c86d66-c292-44f0-bc1c-b2163986f8cd" name="Changes" comment="Inicio del proyecto">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea1/Persona.java" afterDir="false" />
++    <list default="true" id="e1c86d66-c292-44f0-bc1c-b2163986f8cd" name="Changes" comment="Merge remote-tracking branch 'origin/master'">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloApplication.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea1/Main.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea1/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea1/Persona.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tarea1/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tarea1/hello-view.fxml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -24,7 +24,27 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="PUSH_AUTO_UPDATE" value="true" />
++    <option name="PUSH_TAGS">
++      <GitPushTagMode>
++        <option name="argument" value="--tags" />
++        <option name="title" value="All" />
++      </GitPushTagMode>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
++  "lastFilter": {
++    "state": "OPEN"
++  }
++}]]></component>
++  <component name="GithubPullRequestsUISettings">
++    <option name="selectedUrlAndAccountId">
++      <UrlAndAccount>
++        <option name="accountId" value="32876ee7-ac7b-4fd7-9c9b-b2acf86095d0" />
++        <option name="url" value="https://github.com/CalacasChidas/Tarea1.git" />
++      </UrlAndAccount>
++    </option>
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+@@ -70,7 +90,7 @@
+   </component>
+   <component name="RunManager">
+     <configuration name="App" type="Application" factoryName="Application">
+-      <option name="MAIN_CLASS_NAME" value="com.example.tarea1.HelloApplication" />
++      <option name="MAIN_CLASS_NAME" value="com.example.tarea1.Main" />
+       <module name="Tarea1" />
+       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\aleja\Downloads\javafx-sdk-19.0.2.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+       <method v="2">
+@@ -94,7 +114,7 @@
+       <workItem from="1677908934077" duration="3712000" />
+       <workItem from="1677955579207" duration="4215000" />
+       <workItem from="1677981187875" duration="1393000" />
+-      <workItem from="1678032387151" duration="6423000" />
++      <workItem from="1678032387151" duration="12864000" />
+     </task>
+     <task id="LOCAL-00001" summary="Inicio del proyecto">
+       <created>1677878411600</created>
+@@ -117,14 +137,49 @@
+       <option name="project" value="LOCAL" />
+       <updated>1677878637458</updated>
+     </task>
+-    <option name="localTasksCounter" value="4" />
++    <task id="LOCAL-00004" summary="Inicio del proyecto">
++      <created>1678048808487</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1678048808487</updated>
++    </task>
++    <task id="LOCAL-00005" summary="Inicio del proyecto">
++      <created>1678048937298</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1678048937298</updated>
++    </task>
++    <task id="LOCAL-00006" summary="Merge remote-tracking branch 'origin/master'">
++      <created>1678049053982</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1678049053983</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+   <component name="VcsManagerConfiguration">
++    <MESSAGE value="Creación de las personas y sus métodos.&#10;Inicio de la creación del operador de edades." />
+     <MESSAGE value="Inicio del proyecto" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Inicio del proyecto" />
++    <MESSAGE value="Creación de las personas y del operador de edades" />
++    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
++    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'" />
+   </component>
+ </project>
+\ No newline at end of file
