@@ -11,10 +11,10 @@ public class Persona {
         this.edad = edad;
     }
     public void showPersona(){
-        System.out.println("------------------------");
         System.out.println(getNombre());
         System.out.println(getEdad());
         System.out.println(getProvincia());
+        System.out.println("------------------------");
     }
     //Getter para la edad
     public int getEdad() {

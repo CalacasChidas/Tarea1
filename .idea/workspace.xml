@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1c86d66-c292-44f0-bc1c-b2163986f8cd" name="Changes" comment="Inicio del proyecto">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea1/Persona.java" afterDir="false" />
+    <list default="true" id="e1c86d66-c292-44f0-bc1c-b2163986f8cd" name="Changes" comment="Proyecto terminado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea1/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/tarea1/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/tarea1/Persona.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/tarea1/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/tarea1/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +24,27 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="32876ee7-ac7b-4fd7-9c9b-b2acf86095d0" />
+        <option name="url" value="https://github.com/CalacasChidas/Tarea1.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -44,25 +64,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/aleja/iCloudDrive/TEC/Progra/Estructura de Datos I/Tarea1/src/main/java/com/example/tarea1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Global Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/aleja/iCloudDrive/TEC/Progra/Estructura de Datos I/Tarea1/src/main/java/com/example/tarea1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\aleja\iCloudDrive\TEC\Progra\Estructura de Datos I\Tarea1\src\main\java\com\example\tarea1" />
@@ -70,7 +90,7 @@
   </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.example.tarea1.HelloApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.example.tarea1.Main" />
       <module name="Tarea1" />
       <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\aleja\Downloads\javafx-sdk-19.0.2.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
@@ -94,7 +114,7 @@
       <workItem from="1677908934077" duration="3712000" />
       <workItem from="1677955579207" duration="4215000" />
       <workItem from="1677981187875" duration="1393000" />
-      <workItem from="1678032387151" duration="6423000" />
+      <workItem from="1678032387151" duration="13225000" />
     </task>
     <task id="LOCAL-00001" summary="Inicio del proyecto">
       <created>1677878411600</created>
@@ -117,14 +137,57 @@
       <option name="project" value="LOCAL" />
       <updated>1677878637458</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Inicio del proyecto">
+      <created>1678048808487</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678048808487</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Inicio del proyecto">
+      <created>1678048937298</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678048937298</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Merge remote-tracking branch 'origin/master'">
+      <created>1678049053982</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678049053983</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Proyecto terminado">
+      <created>1678055393799</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678055393799</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Creación de las personas y sus métodos.&#10;Inicio de la creación del operador de edades." />
     <MESSAGE value="Inicio del proyecto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inicio del proyecto" />
+    <MESSAGE value="Creación de las personas y del operador de edades" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
+    <MESSAGE value="Proyecto terminado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Proyecto terminado" />
   </component>
 </project>

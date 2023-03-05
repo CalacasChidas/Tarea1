@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Spinner?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
@@ -42,8 +43,7 @@
          </font>
       </Label>
       <Line endX="-14.0" endY="218.0" layoutX="264.0" layoutY="153.0" startX="-14.0" startY="-42.0" />
-      <TextField fx:id="nombre" layoutX="33.0" layoutY="166.0" promptText="Nombre" style="-fx-background-color: SEASHELL;" />
-      <TextField fx:id="edad" layoutX="33.0" layoutY="261.0" promptText="Edad" style="-fx-background-color: SEASHELL;" />
+      <TextField fx:id="nombre" layoutX="95.0" layoutY="167.0" promptText="Nombre" style="-fx-background-color: SEASHELL;" />
       <MenuButton layoutX="33.0" layoutY="210.0" mnemonicParsing="false" text="Provincia">
         <items>
           <MenuItem mnemonicParsing="false" onAction="#cartago" text="Cartago" />
@@ -74,39 +74,49 @@
             <Font name="Showcard Gothic" size="13.0" />
          </font>
       </Label>
-      <VBox layoutX="262.0" layoutY="153.0" prefHeight="53.0" prefWidth="110.0">
+      <VBox layoutX="253.0" layoutY="154.0" prefHeight="53.0" prefWidth="110.0">
          <children>
             <MenuButton mnemonicParsing="false" text="Persona 1:">
               <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-                <MenuItem mnemonicParsing="false" text="Action 2" />
+                <MenuItem mnemonicParsing="false" onAction="#persona11" text="Persona 1" />
+                <MenuItem mnemonicParsing="false" onAction="#persona12" text="Persona 2" />
+                  <MenuItem mnemonicParsing="false" onAction="#persona13" text="Persona 3" />
+                  <MenuItem mnemonicParsing="false" onAction="#persona14" text="Persona 4" />
               </items>
             </MenuButton>
             <MenuButton mnemonicParsing="false" text="Persona 2:">
               <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-                <MenuItem mnemonicParsing="false" text="Action 2" />
+                <MenuItem mnemonicParsing="false" onAction="#persona21" text="Persona 1" />
+                <MenuItem mnemonicParsing="false" onAction="#persona22" text="Persona 2" />
+                  <MenuItem mnemonicParsing="false" onAction="#persona23" text="Persona 3" />
+                  <MenuItem mnemonicParsing="false" onAction="#persona24" text="Persona 4" />
               </items>
             </MenuButton>
          </children>
       </VBox>
-      <Label fx:id="nombrePersona1" layoutX="372.0" layoutY="157.0" prefHeight="18.0" prefWidth="116.0" text="Nombre Persona">
+      <Label fx:id="nombrePersona1" layoutX="355.0" layoutY="157.0" prefHeight="18.0" prefWidth="145.0">
          <font>
-            <Font name="Showcard Gothic" size="13.0" />
+            <Font name="Showcard Gothic" size="11.0" />
          </font>
       </Label>
-      <Label fx:id="nombrePersona2" layoutX="372.0" layoutY="183.0" prefHeight="18.0" prefWidth="116.0" text="Nombre Persona">
+      <Label fx:id="nombrePersona2" layoutX="355.0" layoutY="183.0" prefHeight="18.0" prefWidth="145.0">
          <font>
-            <Font name="Showcard Gothic" size="13.0" />
+            <Font name="Showcard Gothic" size="11.0" />
          </font>
       </Label>
-      <HBox focusTraversable="true" layoutX="253.0" layoutY="229.0" prefHeight="37.0" prefWidth="239.0">
+      <HBox focusTraversable="true" layoutX="253.0" layoutY="269.0" prefHeight="37.0" prefWidth="239.0">
          <children>
             <Button mnemonicParsing="false" onMouseClicked="#suma" prefHeight="40.0" prefWidth="68.0" style="-fx-background-color: darkcyan;" text="+" />
-            <Button mnemonicParsing="false" onMouseClicked="#resta" prefHeight="39.0" prefWidth="62.0" style="-fx-background-color: darkcyan;" text="-" />
+            <Button mnemonicParsing="false" onMouseClicked="#resta" prefHeight="39.0" prefWidth="64.0" style="-fx-background-color: darkcyan;" text="-" />
             <Button mnemonicParsing="false" onMouseClicked="#multi" prefHeight="39.0" prefWidth="57.0" style="-fx-background-color: darkcyan;" text="*" />
             <Button mnemonicParsing="false" onMouseClicked="#divi" prefHeight="40.0" prefWidth="54.0" style="-fx-background-color: darkcyan;" text="/" />
          </children>
       </HBox>
+      <Spinner fx:id="ageSpinner" editable="true" layoutX="33.0" layoutY="256.0" style="-fx-background-color: darkcyan;" />
+      <Label fx:id="nombrePersona11" layoutX="26.0" layoutY="171.0" prefHeight="18.0" prefWidth="63.0" text="Nombre:">
+         <font>
+            <Font name="Showcard Gothic" size="13.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
