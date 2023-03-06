@@ -294,7 +294,10 @@ public class HelloController implements Initializable {
         if (dato2 == 0 & dato1 != 0) {
             dato2 = 1;
             resultado.setText(Integer.toString(dato1 * dato2));
-        } else {
+        }
+        if ((dato1 & dato2) == 0){
+            resultado.setText("1");
+        }else {
             resultado.setText(Integer.toString(dato1 * dato2));
         }
     }
