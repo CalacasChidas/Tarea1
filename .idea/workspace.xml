@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1c86d66-c292-44f0-bc1c-b2163986f8cd" name="Changes" comment="Clase &quot;Hello Controller&quot; se desconfiguró">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e1c86d66-c292-44f0-bc1c-b2163986f8cd" name="Changes" comment="Javadoc" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,7 +109,7 @@
       <workItem from="1677908934077" duration="3712000" />
       <workItem from="1677955579207" duration="4215000" />
       <workItem from="1677981187875" duration="1393000" />
-      <workItem from="1678032387151" duration="14449000" />
+      <workItem from="1678032387151" duration="14764000" />
     </task>
     <task id="LOCAL-00001" summary="Inicio del proyecto">
       <created>1677878411600</created>
@@ -177,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678055813671</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Javadoc">
+      <created>1678057132193</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678057132193</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +205,7 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
     <MESSAGE value="Proyecto terminado" />
     <MESSAGE value="Clase &quot;Hello Controller&quot; se desconfiguró" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clase &quot;Hello Controller&quot; se desconfiguró" />
+    <MESSAGE value="Javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Javadoc" />
   </component>
 </project>
